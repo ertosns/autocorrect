@@ -24,4 +24,4 @@ suggestion for wordاستثماز is استثمار
 ```
 
 # dataset
-- the vocabulary is built from (Egyptian Arabic wikipedia)[https://drive.google.com/file/d/1bgDu-LFQRB0wHGtRCCqJW5Gg_4DDDB0G/view?usp=sharing], make sure to install it under directory data
+- the vocabulary is built from [Egyptian Arabic wikipedia](https://drive.google.com/file/d/1bgDu-LFQRB0wHGtRCCqJW5Gg_4DDDB0G/view?usp=sharing), make sure to install it under directory data
