@@ -1,7 +1,3 @@
-from collections import Counter
-import numpy as np
-import pandas as pd
-
 class AutoCorrection(object):
     def __init__(self, words, alphabets, verbose=False, switch_on=False):
         self.word_l = words
@@ -84,10 +80,7 @@ class AutoCorrection(object):
         l1=self.edit_one_letter(word)
         in1l=self.vocab.intersection(l1)
         # if exists in two letters edit
-        l2 = set()
-        for w in l1:
-            for w2 in self.edit_two_letters(w):
-                l2.add(w2)
+        l2 = self.edit_two_letters(word)
         in2l=self.vocab.intersection(l2)
         suggestions = {word: self.probs.get(word, 0) for word in invocab or in1l or in2l }
         n_best=sorted(suggestions.items(), key=lambda item: item[1], reverse=True)[0:2]
